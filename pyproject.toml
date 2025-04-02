@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rrt_planner_python"
+version = "0.1.0"
+description = "A package to create 2D RRT (Rapidly-exploring Random Tree) paths."
+authors = [{ name = "Arthur Haffemayer", email = "arthur.haffemayer@laas.fr" }]  
+license = { file = "LICENSE" }  # Ensure you have a LICENSE file
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "numpy",
+    "matplotlib",
+    "scipy",
+    "rich"
+]
+
+[tool.setuptools]
+packages = ["rrt_planner_python"]
+[tool.setuptools.package-dir]
+"" = "src"
